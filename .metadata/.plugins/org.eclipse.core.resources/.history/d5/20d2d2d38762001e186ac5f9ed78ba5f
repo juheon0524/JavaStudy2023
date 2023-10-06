@@ -1,0 +1,11 @@
+package ex06;
+
+import java.util.function.Predicate;
+
+public class Lamda10 {
+	public static void main(String[] args) {
+		Predicate<Integer> f1 = (i) -> i%2==1 ? true: false ; 
+		System.out.println(f1.test(5));
+		
+	}
+}

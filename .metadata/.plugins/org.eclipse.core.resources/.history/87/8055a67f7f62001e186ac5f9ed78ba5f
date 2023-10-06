@@ -1,0 +1,12 @@
+package ex06;
+
+import java.util.Comparator;
+import java.util.function.Function;
+
+public class Lamda8 {
+
+	public static void main(String[] args) {
+		Comparator<Integer, Integer> d1 = () -> (int)(Math.random()*6);
+	}
+
+}

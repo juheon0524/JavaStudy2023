@@ -1,0 +1,23 @@
+package ex03;
+
+public class CurrentThreadName3 {
+
+	public static void main(String[] args) {
+		Runnable task1 = () -> {
+			for(int i=0; i<20; i++) {
+				if(i%2==0)
+					System.out.println(i+" ");
+			}
+			
+			Runnable task2 = () -> {
+				for(int i=0; i<20; i++) {
+					if(i%2==1)
+						System.out.println(i+" ");
+				}	
+		};
+		Thread t = new Thread(task, "Mythread");
+		t.start();
+		System.out.println("end : " + Thread.currentThread().getName());
+	}
+
+}

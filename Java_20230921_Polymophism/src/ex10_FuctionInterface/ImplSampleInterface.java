@@ -1,0 +1,14 @@
+package ex10_FuctionInterface;
+
+public class ImplSampleInterface implements SampleInterface{
+
+	@Override
+	public void sample() {
+		System.out.println("이놈은 무조건 구현");
+	}
+	
+	public void sample2() {
+		System.out.println("니가 선택해서 구현하든 말든");
+	}
+
+}

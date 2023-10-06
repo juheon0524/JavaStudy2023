@@ -1,0 +1,39 @@
+package ex02;
+
+import java.util.ArrayList;
+import java.util.List;
+
+class Student{
+	private String name;
+	private int java;
+	public Student(String name, int java) {
+		this.name = name;
+		this.java = java;
+	}
+	
+	public String getName() {
+		return name;
+	}
+	public int getJava() {
+		return java;
+	}
+	
+	
+}
+public class StudentStream {
+
+	public static void main(String[] args) {
+		List<Student> student = new ArrayList<Student>();
+		student.add(new Student("조조",92));
+		student.add(new Student("유비",72));
+		student.add(new Student("손권",91));
+		
+		double avg = student.stream()
+			.mapToInt(s->s.getJava())
+			.average()
+			.getAsDouble();
+		System.out.printf("평균 : %.2f\n" , avg);
+		
+	}
+
+}

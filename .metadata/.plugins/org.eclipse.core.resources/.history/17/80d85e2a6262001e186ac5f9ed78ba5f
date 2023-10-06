@@ -1,0 +1,14 @@
+package ex06;
+
+interface Printable4 {
+	void print(int num1, int num2);
+}
+
+
+public class Lamda4 {
+
+	public static void main(String[] args) {
+	
+	}
+
+}

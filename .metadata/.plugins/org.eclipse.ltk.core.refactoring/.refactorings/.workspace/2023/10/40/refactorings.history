@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename Java project &apos;Java_20231004_ramda&apos; to &apos;Java_20231004_Ramda&apos;&#x0D;&#x0A;- Original element: &apos;Java_20231004_ramda&apos;&#x0D;&#x0A;- Renamed element: &apos;Java_20231004_ramda&apos;&#x0D;&#x0A;- Update references to refactored element" description="Rename Java project &apos;Java_20231004_ramda&apos;" flags="7" id="org.eclipse.jdt.ui.rename.java.project" input="=Java_20231004_ramda" name="Java_20231004_Ramda" references="true" stamp="1696379649167" version="1.0"/>
+</session>

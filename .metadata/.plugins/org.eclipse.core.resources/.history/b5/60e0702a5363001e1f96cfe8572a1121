@@ -1,0 +1,42 @@
+package ex03;
+class Counter3 {
+	int count = 0;
+	
+	synchronized public void increment() {count++;}
+	synchronized public void decrement() {count--;}
+	
+	public int getCount() {return count;}
+}
+public class CurrentThreadName6 {
+	public static Counter cnt = new Counter();
+	
+	public static void main(String[] args) throws InterruptedException {
+		Runnable t1 = () -> {
+			for(int i=0; i<5; i++) {
+				System.out.println("Hello");
+				try {
+					Thread.sleep(1000);
+				}catch(InterruptedException e){
+					e.printStackTrace();
+				}
+			}
+		};
+		
+		Runnable t2 = () -> {
+			for(int i=0; i<5; i++) {
+				System.out.println("World");
+				try {
+					Thread.sleep(1000);
+				}catch(InterruptedException e){
+					e.printStackTrace();
+				}
+			}			
+		};
+		
+		
+		t1.start();
+		t2.start();
+
+
+		}
+	}

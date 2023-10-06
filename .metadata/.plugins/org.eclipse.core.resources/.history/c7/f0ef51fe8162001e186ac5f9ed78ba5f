@@ -1,0 +1,12 @@
+package ex06;
+
+import java.util.function.Function;
+
+public class Lamda9 {
+	Function<int[], Integer> ee = (int[] arr) -> {
+		int sum = 0;
+		for(int i : arr)
+			sum +=i;
+		return sum;
+	};
+}
